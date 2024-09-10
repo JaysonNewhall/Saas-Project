@@ -1,18 +1,7 @@
-.nav-bar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 500;
-  transition: ease-in-out 0.3s;
-}
-.nav-bar.sticky {
-  background-color: transparent;
-  box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.2);
-}
-.nav-bar.sticky .navbar-toggler span,
-.nav-bar.sticky .navbar-brand {
-  color: var(--font-color-dark);
+.main-header {
+  background-image: url("../backgrounds/background-top.svg");
+  padding: 0;
+  margin: 0;
 }
 .navbar-toggler {
   position: absolute;
@@ -30,6 +19,9 @@
 }
 [aria-controls="navbarDropdown"] {
   display: none;
+}
+.nav-bar {
+  padding: 20px;
 }
 .nav-bar .container {
   display: flex;
@@ -60,8 +52,8 @@
   align-items: center;
 }
 .bg-header {
+  width: 100%;
   padding: var(--size-150) 0;
-  background-image: url("../backgrounds/background-top.svg");
 }
 .hero-header {
   font-size: 2.75rem;
@@ -240,6 +232,12 @@
 .premium p,
 .documentation p {
   padding: 20px 0;
+}
+.responsive:hover,
+.customizable:hover,
+:hover .premium:hover,
+.documentation:hover {
+  box-shadow: 1px 10px 8px 8px rgba(48, 63, 100, 0.3);
 }
 .premiumDiv {
   display: flex;
